@@ -12,6 +12,6 @@ spec:
             fieldRef:
               fieldPath: metadata.namespace
         image: gcr.io/ml-pipeline/viewer-crd-controller:0.1.31
-        imagePullPolicy: Always
+        imagePullPolicy: IfNotPresent
         name: ml-pipeline-viewer-controller
       serviceAccountName: crd-service-account

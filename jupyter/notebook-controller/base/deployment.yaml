@@ -15,7 +15,7 @@ spec:
             value: "false"
           - name: POD_LABELS
             value: $(POD_LABELS)
-        imagePullPolicy: Always
+        imagePullPolicy: IfNotPresent
         livenessProbe:
           httpGet:
             path: /metrics
