@@ -15,6 +15,7 @@ spec:
         - sh
         - /var/webhook-config/create_ca.sh
         image: gcr.io/kubeflow-images-public/ingress-setup:latest
+        imagePullPolicy: IfNotPresent
         name: bootstrap
         volumeMounts:
         - mountPath: /var/webhook-config/
